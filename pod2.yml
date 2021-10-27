@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+spec:
+  containers:
+  - name: nginx-trilok
+    image: nginx
+  - name: wathcher-trilok
+    image: afakharany/watcher
+    ports:
+    - containerPort: 8080
